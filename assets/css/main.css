@@ -323,6 +323,11 @@ input, select, textarea {
 	}
 
 
+	.image.main {
+		display: block;  /* Make the anchor tag a block element */
+		margin: 0 auto;  /* Automatically adjust the margins to center it horizontally */
+		text-align: center;  /* Optional: Ensure the text inside the link is centered */
+	}
 	
 	
 /* Row */
