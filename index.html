@@ -128,7 +128,7 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
+							<form id="contactForm" method="post" action="#">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
@@ -136,7 +136,7 @@
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="email" name="email" id="email" />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
@@ -144,7 +144,7 @@
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><a href="#" id="sendMessage" class="button">Send Message</a></li>
 								</ul>
 							</form>
 						</section>
@@ -189,6 +189,23 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				document.getElementById('sendMessage').addEventListener('click', function(event) {
+					event.preventDefault();  // Prevent the default action of the link
+					
+					// Get the form values
+					var name = encodeURIComponent(document.getElementById('name').value);
+					var email = encodeURIComponent(document.getElementById('email').value);
+					var message = encodeURIComponent(document.getElementById('message').value);
+					
+					// Create the mailto link with dynamic subject and body
+					var mailtoLink = 'mailto:marc_remillard@outlook.com?subject=Message from ' + name + '&body=From: ' + email + '%0A%0A' + message;
+					
+					// Set the href attribute of the link to the mailto link
+					window.location.href = mailtoLink;
+				});
+			</script>
 
 	</body>
 </html>
