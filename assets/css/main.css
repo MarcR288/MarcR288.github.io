@@ -322,8 +322,22 @@ input, select, textarea {
 		border-bottom-color: #eeeeee;
 	}
 
-/* Row */
 
+	.about-container {
+		display: flex;
+		align-items: center;  /* Aligns the items vertically centered */
+		justify-content: space-between;  /* Adds space between the two items */
+		gap: 20px;  /* Adds space between the text and image */
+	}
+
+	.about-text {
+		flex: 1;  /* This ensures that the text takes up available space */
+	}
+
+	.image.main {
+		flex-shrink: 0;  /* Prevents the image from shrinking */
+	}
+/* Row */
 	.row {
 		display: flex;
 		flex-wrap: wrap;
