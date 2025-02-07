@@ -325,18 +325,23 @@ input, select, textarea {
 
 	.about-container {
 		display: flex;
-		align-items: center;  /* Aligns the items vertically centered */
+		align-items: flex-start;  /* Aligns the items to the top */
 		justify-content: space-between;  /* Adds space between the two items */
 		gap: 20px;  /* Adds space between the text and image */
+		flex-wrap: nowrap;  /* Ensures the text and image stay side-by-side */
+		width: 100%;  /* Ensures the container takes full width */
 	}
-
+	
 	.about-text {
-		flex: 1;  /* This ensures that the text takes up available space */
+		flex: 1;  /* Ensures the text takes up the available space */
+		max-width: 60%;  /* Optional: limits the width of the text section */
 	}
-
+	
 	.image.main {
 		flex-shrink: 0;  /* Prevents the image from shrinking */
+		max-width: 40%;  /* Optional: limits the width of the image */
 	}
+	
 /* Row */
 	.row {
 		display: flex;
