@@ -323,28 +323,7 @@ input, select, textarea {
 	}
 
 
-	.about-container {
-		width: 100%;  /* Ensures the container takes full width */
-		display: flex;
-		flex-wrap: wrap;  /* Ensures the elements wrap if there's not enough space */
-		gap: 20px;
-	}
 	
-	.about-text {
-		flex: 1;
-		max-width: 60%;  /* Optional: You can adjust this if you want the text to take up more/less space */
-		overflow: hidden;  /* Ensures text doesn't overflow */
-	}
-	
-	.image.main {
-		float: right;  /* Floats the image to the right of the paragraph */
-		margin-left: 20px;  /* Adds space between the image and the text */
-		margin-top: 0;  /* Optional: adjust to align top */
-	}
-	
-	p {
-		text-align: justify;  /* Optional: Makes the text more readable by justifying it */
-	}
 	
 /* Row */
 	.row {
