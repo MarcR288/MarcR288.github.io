@@ -9,6 +9,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.skills {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    display: flex;
+    align-items: center; /* Vertically align the skill name, bar, and level */
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.skill-name {
+    width: 40%; /* Adjust width as needed */
+    text-align: left;
+    padding-right: 10px; /* Space between the skill name and the bar */
+}
+
+.skill-bar {
+    width: 40%; /* Width of the progress bar */
+    height: 10px; /* Height of the progress bar */
+    background-color: #e0e0e0; /* Light gray background for the bar */
+    border-radius: 5px; /* Rounded corners for the bar */
+    margin-right: 10px; /* Space between the bar and the skill level */
+    position: relative;
+}
+
+.skill-fill {
+    height: 100%;
+    background-color: #4caf50; /* Green color for the filled portion */
+    border-radius: 5px; /* Rounded corners for the filled portion */
+}
+
+.skill-level {
+    width: 15%; /* Width of the skill level text */
+    text-align: right;
+}
+
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -37,16 +77,78 @@
 
 				<!-- Main -->
 					<div id="main">
-
-						<!-- Post -->
 							<section class="post">
 								<header class="major">
 									<span class="date">Febuary 07, 2025</span>
 									<h1>Self Evaluated Skills</h1>
 									<p>
                                         <ul class="skills">
-                                            <li>Test Skill: 80</li>
-                                        </ul>
+											<li>
+												<div class="skill-name">Java</div>
+												<div class="skill-bar">
+													<div class="skill-fill" style="width: 70%;"></div>
+												</div>
+												<div class="skill-level">70</div>
+											</li>
+											<li>
+												<div class="skill-name">Android Mobile Development (Java)</div>
+												<div class="skill-bar">
+													<div class="skill-fill" style="width: 65%;"></div>
+												</div>
+												<div class="skill-level">65</div>
+											</li>
+											<li>
+												<div class="skill-name">C#</div>
+												<div class="skill-bar">
+													<div class="skill-fill" style="width: 55%;"></div>
+												</div>
+												<div class="skill-level">55</div>
+											</li>
+											<li>
+												<div class="skill-name">Python</div>
+												<div class="skill-bar">
+													<div class="skill-fill" style="width: 55%;"></div>
+												</div>
+												<div class="skill-level">55</div>
+											</li>
+											<li>
+												<div class="skill-name">Spring Framework</div>
+												<div class="skill-bar">
+													<div class="skill-fill" style="width: 50%;"></div>
+												</div>
+												<div class="skill-level">50</div>
+											</li>
+											<li>
+												<div class="skill-name">J2EE</div>
+												<div class="skill-bar">
+													<div class="skill-fill" style="width: 45%;"></div>
+												</div>
+												<div class="skill-level">45</div>
+											</li>
+											<li>
+												<div class="skill-name">C++</div>
+												<div class="skill-bar">
+													<div class="skill-fill" style="width: 45%;"></div>
+												</div>
+												<div class="skill-level">45</div>
+											</li>
+											<li>
+												<div class="skill-name">HTML/CSS</div>
+												<div class="skill-bar">
+													<div class="skill-fill" style="width: 40%;"></div>
+												</div>
+												<div class="skill-level">40</div>
+											</li>
+											<li>
+												<div class="skill-name">C</div>
+												<div class="skill-bar">
+													<div class="skill-fill" style="width: 35%;"></div>
+												</div>
+												<div class="skill-level">35</div>
+											</li>
+										</ul>
+										
+										
                                     </p>
 								</header>
 							</section>
