@@ -10,26 +10,40 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			.grades {
-						list-style-type: none;
-						padding: 0;
-					}
+.grades {
+    list-style-type: none;
+    padding: 0;
+}
 
-			.grades li {
-				display: flex;
-				justify-content: space-between; /* This will space out course and grade */
-				margin-bottom: 10px; /* Space between list items */
-			}
+.grades li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
-			.course {
-				width: 70%; /* Adjust the width to fit your content */
-				text-align: left;
-			}
+.course {
+    width: 70%; /* Adjust the width of the course name */
+    text-align: left;
+}
 
-			.grade {
-				width: 20%; /* Adjust to make sure the grade fits neatly */
-				text-align: right;
-			}
+.grade-bar {
+    width: 20%; /* Width of the grade bar */
+    height: 10px; /* Height of the grade bar */
+    background-color: #e0e0e0; /* Light gray background for the bar */
+    border-radius: 5px; /* Rounded corners for the bar */
+    margin-right: 10px; /* Space between the bar and the grade */
+}
+
+.grade-fill {
+    height: 100%;
+    background-color: #4caf50; /* Green color for the filled portion */
+    border-radius: 5px; /* Rounded corners for the filled portion */
+}
+
+.grade {
+    width: 10%; /* Adjust width for the grade text */
+    text-align: right;
+}
 
 		</style>
 	</head>
@@ -67,30 +81,169 @@
 									<h1>My Grades</h1>
 									<p>
                                         <ul class="grades">
-											<li><div class="course">Data Fundamentals</div><div class="grade">97</div></li>
-											<li><div class="course">Intro to Networking & Security</div><div class="grade">96</div></li>
-											<li><div class="course">Intro to Windows Administration</div><div class="grade">91</div></li>
-											<li><div class="course">Logic and Programming</div><div class="grade">97</div></li>
-											<li><div class="course">Website Development</div><div class="grade">99</div></li>
-											<li><div class="course">Professional Practice for IT I</div><div class="grade">97</div></li>
-											<li><div class="course">Operating Systems - Linux</div><div class="grade">99</div></li>
-											<li><div class="course">Intro Obj Oriented Programming</div><div class="grade">97</div></li>
-											<li><div class="course">Programming in C</div><div class="grade">100</div></li>
-											<li><div class="course">Client Side Programming</div><div class="grade">100</div></li>
-											<li><div class="course">Intro to Sys Analysis & Design</div><div class="grade">96</div></li>
-											<li><div class="course">Professional Practice for IT II</div><div class="grade">95</div></li>
-											<li><div class="course">Web Application Programming I</div><div class="grade">99</div></li>
-											<li><div class="course">Project Management</div><div class="grade">99</div></li>
-											<li><div class="course">Mobile App Dev - Android</div><div class="grade">100</div></li>
-											<li><div class="course">Programming C++</div><div class="grade">97</div></li>
-											<li><div class="course">Advanced Topics in Programming</div><div class="grade">98</div></li>
-											<li><div class="course">Professional Practice for IT III</div><div class="grade"></div></li>
-											<li><div class="course">Self-directed Study</div><div class="grade"></div></li>
-											<li><div class="course">Data Structures</div><div class="grade"></div></li>
-											<li><div class="course">Windows Programming C#</div><div class="grade"></div></li>
-											<li><div class="course">Integrated Project for Prog</div><div class="grade"></div></li>
-											<li><div class="course">J2EE</div><div class="grade"></div></li>
+											<li>
+												<div class="course">Data Fundamentals</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 97%;"></div>
+												</div>
+												<div class="grade">97</div>
+											</li>
+											<li>
+												<div class="course">Intro to Networking & Security</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 96%;"></div>
+												</div>
+												<div class="grade">96</div>
+											</li>
+											<li>
+												<div class="course">Intro to Windows Administration</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 91%;"></div>
+												</div>
+												<div class="grade">91</div>
+											</li>
+											<li>
+												<div class="course">Logic and Programming</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 97%;"></div>
+												</div>
+												<div class="grade">97</div>
+											</li>
+											<li>
+												<div class="course">Website Development</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 99%;"></div>
+												</div>
+												<div class="grade">99</div>
+											</li>
+											<li>
+												<div class="course">Professional Practice for IT I</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 97%;"></div>
+												</div>
+												<div class="grade">97</div>
+											</li>
+											<li>
+												<div class="course">Operating Systems - Linux</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 99%;"></div>
+												</div>
+												<div class="grade">99</div>
+											</li>
+											<li>
+												<div class="course">Intro Obj Oriented Programming</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 97%;"></div>
+												</div>
+												<div class="grade">97</div>
+											</li>
+											<li>
+												<div class="course">Programming in C</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 100%;"></div>
+												</div>
+												<div class="grade">100</div>
+											</li>
+											<li>
+												<div class="course">Client Side Programming</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 100%;"></div>
+												</div>
+												<div class="grade">100</div>
+											</li>
+											<li>
+												<div class="course">Intro to Sys Analysis & Design</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 96%;"></div>
+												</div>
+												<div class="grade">96</div>
+											</li>
+											<li>
+												<div class="course">Professional Practice for IT II</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 95%;"></div>
+												</div>
+												<div class="grade">95</div>
+											</li>
+											<li>
+												<div class="course">Web Application Programming I</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 99%;"></div>
+												</div>
+												<div class="grade">99</div>
+											</li>
+											<li>
+												<div class="course">Project Management</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 99%;"></div>
+												</div>
+												<div class="grade">99</div>
+											</li>
+											<li>
+												<div class="course">Mobile App Dev - Android</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 100%;"></div>
+												</div>
+												<div class="grade">100</div>
+											</li>
+											<li>
+												<div class="course">Programming C++</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 97%;"></div>
+												</div>
+												<div class="grade">97</div>
+											</li>
+											<li>
+												<div class="course">Advanced Topics in Programming</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 98%;"></div>
+												</div>
+												<div class="grade">98</div>
+											</li>
+											<li>
+												<div class="course">Professional Practice for IT III</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 0%;"></div>
+												</div>
+												<div class="grade"></div>
+											</li>
+											<li>
+												<div class="course">Self-directed Study</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 0%;"></div>
+												</div>
+												<div class="grade"></div>
+											</li>
+											<li>
+												<div class="course">Data Structures</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 0%;"></div>
+												</div>
+												<div class="grade"></div>
+											</li>
+											<li>
+												<div class="course">Windows Programming C#</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 0%;"></div>
+												</div>
+												<div class="grade"></div>
+											</li>
+											<li>
+												<div class="course">Integrated Project for Prog</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 0%;"></div>
+												</div>
+												<div class="grade"></div>
+											</li>
+											<li>
+												<div class="course">J2EE</div>
+												<div class="grade-bar">
+													<div class="grade-fill" style="width: 0%;"></div>
+												</div>
+												<div class="grade"></div>
+											</li>
 										</ul>
+										
 										
                                     </p>
 								</header>
