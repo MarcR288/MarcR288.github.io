@@ -11,12 +11,26 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			.grades {
-				text-align: left; /* This ensures the text inside the list items aligns to the left */
-				margin-left: 0;   /* Remove any left margin if it exists */
-			}
+						list-style-type: none;
+						padding: 0;
+					}
+
 			.grades li {
-				list-style-position: inside; /* Keeps the bullet points inside the list box */
+				display: flex;
+				justify-content: space-between; /* This will space out course and grade */
+				margin-bottom: 10px; /* Space between list items */
 			}
+
+			.course {
+				width: 70%; /* Adjust the width to fit your content */
+				text-align: left;
+			}
+
+			.grade {
+				width: 20%; /* Adjust to make sure the grade fits neatly */
+				text-align: right;
+			}
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -53,30 +67,31 @@
 									<h1>My Grades</h1>
 									<p>
                                         <ul class="grades">
-                                            <li>Data Fundamentals				97</li>
-											<li>Intro to Networking & Security	96</li>
-											<li>Intro to Windows Administration	91</li>
-											<li>Logic and Programming 			97</li>
-											<li>Website Development				99</li>
-											<li>Professional Practice for IT I	97</li>
-											<li>Operating Systems - Linux		99</li>
-											<li>Intro Obj Oriented Programming	97</li>
-											<li>Programming in C				100</li>
-											<li>Client Side Programming			100</li>
-											<li>Intro to Sys Analysis & Design	96</li>
-											<li>Professional Practice for IT II	95</li>
-											<li>Web Application Programming I	99</li>
-											<li>Project Management				99</li>
-											<li>Mobile App Dev -Adroid			100</li>
-											<li>Programming C++					97</li>
-											<li>Advanced Topics in Programming	98</li>
-											<li>Professional Practice for IT III</li>
-											<li>Self-directed Study				</li>
-											<li>Data Structures</li>
-											<li>Windows Programming C#</li>
-											<li>Integrated Project for Prog</li>
-											<li>J2EE</li>
-                                        </ul>
+											<li><div class="course">Data Fundamentals</div><div class="grade">97</div></li>
+											<li><div class="course">Intro to Networking & Security</div><div class="grade">96</div></li>
+											<li><div class="course">Intro to Windows Administration</div><div class="grade">91</div></li>
+											<li><div class="course">Logic and Programming</div><div class="grade">97</div></li>
+											<li><div class="course">Website Development</div><div class="grade">99</div></li>
+											<li><div class="course">Professional Practice for IT I</div><div class="grade">97</div></li>
+											<li><div class="course">Operating Systems - Linux</div><div class="grade">99</div></li>
+											<li><div class="course">Intro Obj Oriented Programming</div><div class="grade">97</div></li>
+											<li><div class="course">Programming in C</div><div class="grade">100</div></li>
+											<li><div class="course">Client Side Programming</div><div class="grade">100</div></li>
+											<li><div class="course">Intro to Sys Analysis & Design</div><div class="grade">96</div></li>
+											<li><div class="course">Professional Practice for IT II</div><div class="grade">95</div></li>
+											<li><div class="course">Web Application Programming I</div><div class="grade">99</div></li>
+											<li><div class="course">Project Management</div><div class="grade">99</div></li>
+											<li><div class="course">Mobile App Dev - Android</div><div class="grade">100</div></li>
+											<li><div class="course">Programming C++</div><div class="grade">97</div></li>
+											<li><div class="course">Advanced Topics in Programming</div><div class="grade">98</div></li>
+											<li><div class="course">Professional Practice for IT III</div><div class="grade"></div></li>
+											<li><div class="course">Self-directed Study</div><div class="grade"></div></li>
+											<li><div class="course">Data Structures</div><div class="grade"></div></li>
+											<li><div class="course">Windows Programming C#</div><div class="grade"></div></li>
+											<li><div class="course">Integrated Project for Prog</div><div class="grade"></div></li>
+											<li><div class="course">J2EE</div><div class="grade"></div></li>
+										</ul>
+										
                                     </p>
 								</header>
 								<div class="image main"><img src="" alt="" /></div>
